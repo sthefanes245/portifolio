@@ -1,0 +1,92 @@
+body {
+  font-family: 'Satisfy', cursive;
+  background-image: url('fundo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: auto;
+  max-width: 300px;
+  margin-left: 10%;
+}
+
+.texto1 {
+  margin-left: 20px;
+  color: rgb(117, 121, 155);
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header img {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .texto1 {
+    width: 80%;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.insta,
+.git,
+.sound {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: #C2C4E2;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  flex: 2 1 200px;
+  margin: 10px;
+  background-color: #cccccc6c;
+  text-align: center;
+  padding: 100px;
+  border-radius: 10%;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+}
